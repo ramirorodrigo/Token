@@ -1,11 +1,14 @@
 //import { response } from "express";
+
 import jwt from "jsonwebtoken";
 import USER from "../models/userModel.js";
 var key = "shhhhhhhhclave";
 var user = new USER();
 class JsonWebTokenManagement {
   constructor() {}
+
   //genera el token
+
   //previa validacion de datos verificar si es un usuario registrado
   sign(params) {
     return jwt.sign(
